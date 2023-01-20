@@ -4,5 +4,6 @@ class RoutesName {
   static const String Creator = 'CreatorView';
   static const String Subject = 'SubjectView';
   static const String SpokenPost = 'SpokenPostView';
+  static const String controller= 'PageControllView';
 
 }

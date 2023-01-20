@@ -6,9 +6,7 @@ import 'package:spoken_core_player/core/common_widgets/Custom_Text.dart';
 import 'package:spoken_core_player/core/const/Padding.dart';
 import 'package:spoken_core_player/core/const/app_colors.dart';
 import 'package:spoken_core_player/core/const/dynamic.dart';
-import 'package:spoken_core_player/core/const/fix_height_width.dart';
 import 'package:spoken_core_player/core/images/image_Path.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:spoken_core_player/core/utils/routes/routes_name.dart';
 import 'package:spoken_core_player/features/videoScreen/video_view.dart';
 
@@ -25,8 +23,6 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-  final _pageControler = PageController(viewportFraction: 0.85);
-  double _opacity = 0.1;
 @override
   void initState() {
     // TODO: implement initState
@@ -61,16 +57,16 @@ class _HomeViewState extends State<HomeView> {
 
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
-                            IconButton(onPressed:(){}, icon:Icon(Icons.arrow_back_ios_new),
+                          /* IconButton(onPressed:(){}, icon:Icon(Icons.arrow_back_ios_new),
                               padding: EdgeInsets.symmetric(vertical: 20.h),
                               constraints: BoxConstraints(),
-                            ),
+                            ),*/
                             SizedBox(
                               width: MediaQuery.of(context).size.width - 80.w ,
                             ),
-                            IconButton(onPressed: (){ Navigator.pushNamed(context,RoutesName.Creator);},
+                            IconButton(onPressed: (){ Navigator.pushNamed(context,RoutesName.controller);},
                               icon: Image.asset(Image_Path.logo),
                             ),
                           ],

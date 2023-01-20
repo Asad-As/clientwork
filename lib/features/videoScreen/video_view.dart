@@ -71,7 +71,21 @@ class _VideoViewState extends State<VideoView> {
                 children: [
                   AspectRatio(
                     aspectRatio:3/3.3,
-                    child: VideoPlayer(controller),
+                    child: InkWell(
+                        onTap: (){
+
+                          if(controller.value.isPlaying){
+                            controller.pause();
+                          }else{
+                            controller.play();
+                          }
+
+                          setState(() {
+
+                          });
+
+                        },
+                        child: VideoPlayer(controller)),
                   ),
 
                   Padding(
@@ -87,7 +101,7 @@ class _VideoViewState extends State<VideoView> {
                       ),
                   ),
 
-                  Positioned(
+                 /* Positioned(
                     top: 1.sh/2.4,
                    // right: 1.sh/2,
                     child: Row(
@@ -104,11 +118,11 @@ class _VideoViewState extends State<VideoView> {
 
                               });
                             },
-                            icon:Icon(controller.value.isPlaying?Icons.pause:Icons.play_arrow)
+                            icon:Icon(controller.value.isPlaying?Icons.pause:Icons.play_arrow,)
                         ),
                       ],
                     ),
-                  )
+                  )*/
 
                 ],),
             ),
@@ -119,7 +133,7 @@ class _VideoViewState extends State<VideoView> {
             children: [
               IconButton(onPressed:(){
                 Navigator.pop(context);
-              }, icon:Icon(Icons.arrow_back_ios_new),
+              }, icon:Icon(Icons.arrow_back_ios_new,color: AppColors.offwhiteColor,),
                 padding: EdgeInsets.symmetric(vertical: 20.h),
                 constraints: BoxConstraints(),
               ),

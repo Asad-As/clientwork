@@ -11,6 +11,7 @@ class SpokenPostView extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.lesswhiteColor,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         centerTitle: true,
         title: custom_Text(Txt: "Spoken Post", Size: 12, weight: FontWeight.w400, color: AppColors.offwhiteColor, theme: true),
       ),

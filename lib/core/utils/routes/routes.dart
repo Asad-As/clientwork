@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spoken_core_player/core/utils/routes/routes_name.dart';
 import 'package:spoken_core_player/features/creator/creator_view.dart';
+import 'package:spoken_core_player/features/creator/pageview_controller.dart';
 import 'package:spoken_core_player/features/creator/subjectView.dart';
 import 'package:spoken_core_player/features/home/home_view.dart';
 import 'package:spoken_core_player/features/videoScreen/video_view.dart';
@@ -20,6 +21,8 @@ class Routes {
          return MaterialPageRoute(builder: (_) => const SubjectView());
        case RoutesName.SpokenPost:
          return MaterialPageRoute(builder: (_) => const SpokenPostView());
+         case RoutesName.controller:
+         return MaterialPageRoute(builder: (_) => PageViewController());
 
       default:
         return MaterialPageRoute(
