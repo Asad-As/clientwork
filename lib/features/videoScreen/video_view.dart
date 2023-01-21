@@ -38,7 +38,9 @@ class _VideoViewState extends State<VideoView> {
   }
 
   loadVideoPlayer(){
-    controller = VideoPlayerController.network(VideoUrl[widget.index]);
+    //controller = VideoPlayerController.network(VideoUrl[widget.index]);
+      controller = VideoPlayerController.asset(Videoassets[widget.index]);
+     
     controller.addListener(() {
       setState(() {});
     });
