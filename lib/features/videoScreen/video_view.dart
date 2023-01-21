@@ -137,7 +137,7 @@ class _VideoViewState extends State<VideoView> {
                 padding: EdgeInsets.symmetric(vertical: 20.h),
                 constraints: BoxConstraints(),
               ),
-              IconButton(onPressed: (){ Navigator.pushNamed(context,RoutesName.Creator);},
+              IconButton(onPressed: (){ Navigator.pushNamed(context,RoutesName.controller);},
                 icon: Image.asset(Image_Path.logo),
               )
             ],
