@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "779769918888",
+    "project_id": "spoken-core-de196",
+    "storage_bucket": "spoken-core-de196.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779769918888:android:f41e36c98c361b8a8f199d",
+        "android_client_info": {
+          "package_name": "com.example.spoken_core_player"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779769918888-mds6qbol189vkibmqj9eu9l6ceugo4kt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spoken_core_player",
+            "certificate_hash": "ed44c3e34872fce392f806c55b6e4f1bd707d084"
+          }
+        },
+        {
+          "client_id": "779769918888-vq9rqdi9klten9s2efe4tbhtguv05kk6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRU6SHhurvBz9HoXGmQ5GKUifCeRZ6L2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779769918888-vq9rqdi9klten9s2efe4tbhtguv05kk6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
