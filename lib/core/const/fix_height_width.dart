@@ -13,6 +13,7 @@ class FixHeightWidth {
   static final height40 = SizedBox(height: 40.h);
 
   //width for space
+  static final width5 = SizedBox(    width: 5.w, );
   static final width10 = SizedBox(    width: 10.w, );
   static final width12 = SizedBox(    width: 12.w, );
   static final width15 = SizedBox(    width: 15.w, );

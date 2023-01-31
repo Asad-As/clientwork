@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -6,10 +7,15 @@ import 'package:spoken_core_player/features/home/home_view.dart';
 
 import 'core/const/app_colors.dart';
 import 'core/utils/routes/routes.dart';
+import 'firebase_options.dart';
 
-void main() {
+Future<void> main() async {
   runApp(const MyApp());
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -22,6 +28,7 @@ class MyApp extends StatelessWidget {
         statusBarColor:
         AppColors.whiteColor, //or set color with: Color(0xFF0000FF)
         statusBarIconBrightness: Brightness.dark));
+
     return ScreenUtilInit(
       minTextAdapt: true,
       splitScreenMode: true,

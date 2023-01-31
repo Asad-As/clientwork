@@ -10,13 +10,6 @@ class CreatorView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.lesswhiteColor,
-      appBar: AppBar(
-        leading: const BackButton(
-          color: AppColors.offwhiteColor,
-        ),
-        centerTitle: true,
-        title: custom_Text(Txt: "QuietWispers", Size: 12, weight: FontWeight.w400, color: AppColors.offwhiteColor, theme: true),
-      ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(20, 50, 20, 0),
         child: Column(
